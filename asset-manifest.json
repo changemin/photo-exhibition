@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photo-exhibition/static/css/main.2bb1045a.css",
-    "main.js": "/photo-exhibition/static/js/main.b13ac825.js",
+    "main.css": "/photo-exhibition/static/css/main.f4eae218.css",
+    "main.js": "/photo-exhibition/static/js/main.a014a0c5.js",
     "static/js/787.31164517.chunk.js": "/photo-exhibition/static/js/787.31164517.chunk.js",
     "static/media/NanumSquareNeo-Variable.woff": "/photo-exhibition/static/media/NanumSquareNeo-Variable.d80ae48b60611b9cbb57.woff",
     "static/media/NanumSquareNeo-Variable.woff2": "/photo-exhibition/static/media/NanumSquareNeo-Variable.1ec64c4f932f64914ebd.woff2",
@@ -16,12 +16,12 @@
     "static/media/NanumSquareNeoTTF-eHv.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-eHv.94e1ff8cc8548100f79c.woff2",
     "static/media/NanumSquareNeoTTF-aLt.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-aLt.fbf1422cd5996eea15e1.woff2",
     "index.html": "/photo-exhibition/index.html",
-    "main.2bb1045a.css.map": "/photo-exhibition/static/css/main.2bb1045a.css.map",
-    "main.b13ac825.js.map": "/photo-exhibition/static/js/main.b13ac825.js.map",
+    "main.f4eae218.css.map": "/photo-exhibition/static/css/main.f4eae218.css.map",
+    "main.a014a0c5.js.map": "/photo-exhibition/static/js/main.a014a0c5.js.map",
     "787.31164517.chunk.js.map": "/photo-exhibition/static/js/787.31164517.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bb1045a.css",
-    "static/js/main.b13ac825.js"
+    "static/css/main.f4eae218.css",
+    "static/js/main.a014a0c5.js"
   ]
 }
