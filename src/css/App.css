@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-  background-color: #191919;
-  font-family: "NanumSquareNeo-R";
-  color: white;
-}
 
 /* FONT */
 @font-face {
@@ -37,7 +31,14 @@ body {
 }
 
 @font-face { /* Heavy */
-  font-family: "NanumSquareNeo-Hv";
+  font-family: "NanumSquareNeo-H";
   src: url("../fonts/woff2/NanumSquareNeoTTF-eHv.woff2") format("woff2"),
   url("../fonts/woff/NanumSquareNeoTTF-eHv.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  background-color: #191919;
+  font-family: "NanumSquareNeo-R";
+  color: white;
 }
