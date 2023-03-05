@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          제작중 !! 테스트
+          제작중 !! 테스트 7:19분
         </p>
       </header>
     </div>
