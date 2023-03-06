@@ -5,8 +5,8 @@ import TextData from '../data/FlowingText.json';
 export default function FlowingText() {
     return (
         <>
-            <LeftMarquee />
-            <RightMarquee />
+          <LeftMarquee />
+          <RightMarquee />
         </>
     )
 }
@@ -30,7 +30,7 @@ const LeftMarqueeContainer = styled.div`
 `
 
 const MarqueeText = styled.div`
-  margin: 0px 100px 0px 0px;
+  margin: 0px 5vh 0px 0px;
   display: flex;
   align-items: center;
   /* height: 100%; */
@@ -43,6 +43,7 @@ const LeftMarquee = () => (
     <Marquee gradient={false} speed={0.5} direction="left">
       {TextData.left.map((item) => (
         <MarqueeText>{item}</MarqueeText>
+        // <Starburst />
       ))}
     </Marquee>
   </LeftMarqueeContainer>
