@@ -1,5 +1,4 @@
 import config
 
-print("hello")
-
-print(config.id)
+print(config.username)
+print(config.password)

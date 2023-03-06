@@ -14,7 +14,7 @@ const leftTextItems = [
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <LeftMarqueeWrapper>
         <Marquee gradientColor={[19,19,19]} speed={2}>
           {leftTextItems.map((item) => (
@@ -30,9 +30,13 @@ export default function App() {
           ))}
         </Marquee>
       </RightMarqueeWrapper>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  height: 50vh;
+`
 
 const FlowingText = styled.p`
   margin: 0px 20px 0px 0px;
@@ -42,9 +46,7 @@ const FlowingText = styled.p`
 
 const LeftMarqueeWrapper = styled.div`
   position: absolute;
-  top: 0%;
-  left: -90vw;
-  transform: rotate(-90deg);
+  height: 100vh;
 `
 
 const RightMarqueeWrapper = styled.div`
