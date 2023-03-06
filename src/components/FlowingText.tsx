@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 import styled from "styled-components";
+import TextData from '../data/FlowingText.json';
 
 export default function FlowingText() {
     return (
@@ -9,14 +10,6 @@ export default function FlowingText() {
         </>
     )
 }
-
-const leftTextItems = [
-  "나의 시선들이 듬뿍 담긴 사진들",
-  "한양대학교 건축학부 22학번 변경민",
-  "@chgemn",
-  "지극히 개인적인 시선들",
-  "Copyright 2023. 변경민 all rights reserved."
-]
 
 const RightMarqueeContainer = styled.div`
   position: absolute;
@@ -42,13 +35,13 @@ const MarqueeText = styled.div`
   align-items: center;
   /* height: 100%; */
   font-family: "NanumSquareNeo-EB";
-  font-size: clamp(1rem, 10vw, 5rem);
+  font-size: clamp(1rem, 8vw, 5rem);
 `
 
 const LeftMarquee = () => (
   <LeftMarqueeContainer>
     <Marquee gradient={false} speed={0.5} direction="left">
-      {leftTextItems.map((item) => (
+      {TextData.left.map((item) => (
         <MarqueeText>{item}</MarqueeText>
       ))}
     </Marquee>
@@ -58,7 +51,7 @@ const LeftMarquee = () => (
 const RightMarquee = () => (
   <RightMarqueeContainer>
     <Marquee gradient={false} speed={0.5} direction="left">
-      {leftTextItems.map((item) => (
+      {TextData.right.map((item) => (
         <MarqueeText>{item}</MarqueeText>
       ))}
     </Marquee>
