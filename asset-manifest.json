@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/photo-exhibition/static/css/main.f4eae218.css",
-    "main.js": "/photo-exhibition/static/js/main.a014a0c5.js",
-    "static/js/787.31164517.chunk.js": "/photo-exhibition/static/js/787.31164517.chunk.js",
-    "static/media/NanumSquareNeo-Variable.woff": "/photo-exhibition/static/media/NanumSquareNeo-Variable.d80ae48b60611b9cbb57.woff",
-    "static/media/NanumSquareNeo-Variable.woff2": "/photo-exhibition/static/media/NanumSquareNeo-Variable.1ec64c4f932f64914ebd.woff2",
-    "static/media/NanumSquareNeoTTF-dEb.woff": "/photo-exhibition/static/media/NanumSquareNeoTTF-dEb.c393afd7217c692a3cdd.woff",
-    "static/media/NanumSquareNeoTTF-bRg.woff": "/photo-exhibition/static/media/NanumSquareNeoTTF-bRg.3ef1b154df4dd187269a.woff",
-    "static/media/NanumSquareNeoTTF-cBd.woff": "/photo-exhibition/static/media/NanumSquareNeoTTF-cBd.b97fa8bab0f60689763b.woff",
-    "static/media/NanumSquareNeoTTF-eHv.woff": "/photo-exhibition/static/media/NanumSquareNeoTTF-eHv.324ece26be02824e94c0.woff",
-    "static/media/NanumSquareNeoTTF-aLt.woff": "/photo-exhibition/static/media/NanumSquareNeoTTF-aLt.c53d1169068f24b721e0.woff",
-    "static/media/NanumSquareNeoTTF-dEb.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-dEb.8f5d88bdccdc1b03419d.woff2",
-    "static/media/NanumSquareNeoTTF-bRg.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-bRg.8c19e413edbc38f2499a.woff2",
-    "static/media/NanumSquareNeoTTF-cBd.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-cBd.79d2b7fd23d6a661eff0.woff2",
-    "static/media/NanumSquareNeoTTF-eHv.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-eHv.94e1ff8cc8548100f79c.woff2",
-    "static/media/NanumSquareNeoTTF-aLt.woff2": "/photo-exhibition/static/media/NanumSquareNeoTTF-aLt.fbf1422cd5996eea15e1.woff2",
-    "index.html": "/photo-exhibition/index.html",
-    "main.f4eae218.css.map": "/photo-exhibition/static/css/main.f4eae218.css.map",
-    "main.a014a0c5.js.map": "/photo-exhibition/static/js/main.a014a0c5.js.map",
-    "787.31164517.chunk.js.map": "/photo-exhibition/static/js/787.31164517.chunk.js.map"
+    "main.css": "/static/css/main.e18c6d06.css",
+    "main.js": "/static/js/main.30783ddc.js",
+    "static/js/787.31164517.chunk.js": "/static/js/787.31164517.chunk.js",
+    "static/media/NanumSquareNeo-Variable.woff": "/static/media/NanumSquareNeo-Variable.d80ae48b60611b9cbb57.woff",
+    "static/media/NanumSquareNeo-Variable.woff2": "/static/media/NanumSquareNeo-Variable.1ec64c4f932f64914ebd.woff2",
+    "static/media/NanumSquareNeoTTF-dEb.woff": "/static/media/NanumSquareNeoTTF-dEb.c393afd7217c692a3cdd.woff",
+    "static/media/NanumSquareNeoTTF-bRg.woff": "/static/media/NanumSquareNeoTTF-bRg.3ef1b154df4dd187269a.woff",
+    "static/media/NanumSquareNeoTTF-cBd.woff": "/static/media/NanumSquareNeoTTF-cBd.b97fa8bab0f60689763b.woff",
+    "static/media/NanumSquareNeoTTF-eHv.woff": "/static/media/NanumSquareNeoTTF-eHv.324ece26be02824e94c0.woff",
+    "static/media/NanumSquareNeoTTF-aLt.woff": "/static/media/NanumSquareNeoTTF-aLt.c53d1169068f24b721e0.woff",
+    "static/media/NanumSquareNeoTTF-dEb.woff2": "/static/media/NanumSquareNeoTTF-dEb.8f5d88bdccdc1b03419d.woff2",
+    "static/media/NanumSquareNeoTTF-bRg.woff2": "/static/media/NanumSquareNeoTTF-bRg.8c19e413edbc38f2499a.woff2",
+    "static/media/NanumSquareNeoTTF-cBd.woff2": "/static/media/NanumSquareNeoTTF-cBd.79d2b7fd23d6a661eff0.woff2",
+    "static/media/NanumSquareNeoTTF-eHv.woff2": "/static/media/NanumSquareNeoTTF-eHv.94e1ff8cc8548100f79c.woff2",
+    "static/media/NanumSquareNeoTTF-aLt.woff2": "/static/media/NanumSquareNeoTTF-aLt.fbf1422cd5996eea15e1.woff2",
+    "index.html": "/index.html",
+    "main.e18c6d06.css.map": "/static/css/main.e18c6d06.css.map",
+    "main.30783ddc.js.map": "/static/js/main.30783ddc.js.map",
+    "787.31164517.chunk.js.map": "/static/js/787.31164517.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4eae218.css",
-    "static/js/main.a014a0c5.js"
+    "static/css/main.e18c6d06.css",
+    "static/js/main.30783ddc.js"
   ]
 }
