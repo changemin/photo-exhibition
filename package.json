@@ -1,5 +1,6 @@
 {
-  "homepage": "https://kyungmin.life",
+  "homepage": ".",
+  "proxy": "http://localhost:5000",
   "name": "photo-exhibition",
   "version": "0.1.0",
   "private": true,
