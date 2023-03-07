@@ -2,6 +2,9 @@ import Marquee from "react-fast-marquee";
 import styled from "styled-components";
 import TextData from '../data/FlowingText.json';
 
+// 총 N개의 사진들.
+// 최근 업데이트
+
 export default function FlowingText() {
     return (
         <>
