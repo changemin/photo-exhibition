@@ -26,7 +26,7 @@ def rename_photos_with_exif():
 
         new_filename = f"{exif_data['DateTime']}@{cnt+1}@{photo.split('@')[2] if len(photo.split('@')) > 2 else photo}"
         print(new_filename)
-
+        img.close()
         os.rename(f"photos/{photo}", f"photos/{new_filename}")
 
 # Photo 폴더의 사진들을 기반으로 React에서 활용할 수 있도록 src/data/Photodata.json 을 생성.
