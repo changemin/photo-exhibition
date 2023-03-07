@@ -37,7 +37,7 @@ def generate_json_photo_data():
     photo_list = []
     for photo in file_list:
         photo_data = {}
-        photo_data["FilePath"] = f"photos/{photo}"
+        photo_data["FilePath"] = photo
         photo_data["DateTime"] = photo.split("@")[0]
         photo_data["Idx"] = photo.split("@")[1]
         photo_data["Title"] = photo.split("@")[2][:-4]

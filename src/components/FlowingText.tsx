@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 import styled from "styled-components";
-import TextData from '../data/FlowingText.json';
+import TextData from '../data/FlowingTextData.json';
 
 // 총 N개의 사진들.
 // 최근 업데이트
@@ -38,7 +38,7 @@ const MarqueeText = styled.div`
   align-items: center;
   /* height: 100%; */
   font-family: "NanumSquareNeo-EB";
-  font-size: clamp(1rem, 8vw, 5rem);
+  font-size: clamp(0.5rem, 5vw, 5rem);
 `
 
 const LeftMarquee = () => (
