@@ -29,7 +29,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "update":"python3 scripts/main.py && gh-pages -d build",
-    "python": "python3 scripts/main.py"
+    "python": "python scripts/main.py"
   },
   "eslintConfig": {
     "extends": [
