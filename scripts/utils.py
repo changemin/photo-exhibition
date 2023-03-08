@@ -3,7 +3,7 @@ import requests
 import config
 import os, json, shutil
 
-#
+# 
 def rename_photos_with_exif():
     # os.remove("photos/.DS_Store")
     print("[Python] rename photos with exif data")
@@ -72,10 +72,6 @@ def reset_src_photos():
     for photo in os.listdir(folder_path):
         photo_path = os.path.join(folder_path, photo)
         os.remove(photo_path)
-
-
-
-
 
 # graph_url = 'https://graph.facebook.com/v15.0/'
 # def post_image(caption='', image_url='',instagram_account_id='',access_token=''):
