@@ -21,7 +21,7 @@ def rename_photos_with_exif():
                 if key in ExifTags.TAGS:
                     exif_data[ExifTags.TAGS[key]] = str(val).replace(":", "-") # collect all the exif tags
 
-        new_filename = f"{exif_data['DateTime']}@{cnt+1}@{photo.split('@')[2] if len(photo.split('@')) > 2 else photo}"
+        new_filename = f"{exif_data['DateTime'].split(' ')[0]}@{cnt+1}@{photo.split('@')[2] if len(photo.split('@')) > 2 else photo}"
         print(new_filename)
         img.close()
         os.rename(f"photos/{photo}", f"photos/{new_filename}")
