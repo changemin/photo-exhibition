@@ -19,7 +19,6 @@ const RightMarqueeContainer = styled.div`
   top: 0;
   bottom: 0;
   right: 2vw;
-  /* height: 100vh; */
   width: 100vh;
   transform: rotate(90deg);
 `
