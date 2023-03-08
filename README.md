@@ -7,4 +7,5 @@
 - [ ] 반응형
 - [ ] Instagram bot python script에 추가
 - [ ] 사진 full image로 보기
-- [ ] 이미지 최적화
+- [x] 이미지 최적화
+- [ ] Lazy loading 혹은 placeholder image 추가

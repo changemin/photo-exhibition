@@ -90,6 +90,10 @@ def reset_src_photos():
         if os.path.isfile(photo_path):
             os.remove(photo_path)
 
+def get_photo_count():
+    photos = os.listdir("./src/photos")
+    return len(photos)
+
 # graph_url = 'https://graph.facebook.com/v15.0/'
 # def post_image(caption='', image_url='',instagram_account_id='',access_token=''):
 #     url = graph_url + instagram_account_id + '/media'
