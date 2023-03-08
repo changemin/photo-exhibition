@@ -65,13 +65,30 @@ def copy_photos():
         destination_file = os.path.join(destination_folder, file_name)
         shutil.copy(source_file, destination_file)
 
+# src/photos/의 사진들을 압축합니다.
+def optimize_photos(quality):
+    target_folder = "./src/photos"
+    for photo in os.listdir(target_folder):
+        photo_path = os.path.join(target_folder, photo)
+        if os.path.isfile(photo_path):
+            img = Image.open(photo_path)
+            img.save("./src/photos/_"+photo, optimize=True, quality=quality)
+
+    for photo in os.listdir(target_folder):
+        photo_path = os.path.join(target_folder, photo)
+        if os.path.isfile(photo_path):
+            if photo[0] != "_":
+                os.remove(photo_path)
+                os.rename("./src/photos/_"+photo, photo_path)
+ 
 
 # src/photos/의 사진들을 모두 삭제합니다.
 def reset_src_photos():
     folder_path = "src/photos"
     for photo in os.listdir(folder_path):
         photo_path = os.path.join(folder_path, photo)
-        os.remove(photo_path)
+        if os.path.isfile(photo_path):
+            os.remove(photo_path)
 
 # graph_url = 'https://graph.facebook.com/v15.0/'
 # def post_image(caption='', image_url='',instagram_account_id='',access_token=''):
