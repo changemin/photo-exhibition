@@ -3,7 +3,7 @@ import requests
 import config
 import os, json, shutil
 
-# 
+# 사진의 EXIF 데이터를 기반으로 사진 파일 이름을 바꾸어 줍니다.
 def rename_photos_with_exif():
     # os.remove("photos/.DS_Store")
     print("[Python] rename photos with exif data")
