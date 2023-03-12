@@ -19,8 +19,8 @@ export default function PhotoGridView() {
 
 const PhotoContainer = styled.div`
     position: relative;
-    width: 28vw;
-    height: 28vw;
+    width: 32vw;
+    height: 32vw;
     @media screen and (min-width: 768px){
         width: 20vw;
         height: 20vw;
