@@ -10,7 +10,11 @@ export default function PhotoGridView() {
         <PhotoGridViewWrapper>
             {PhotoData.map((item, idx) => (
                 <PhotoContainer>
+                    <PhotoDescriptionContainer>
+                        <PhotoDescription>{item.DateTime}</PhotoDescription>
+                    </PhotoDescriptionContainer>
                     <Photo src={require("../photos/"+item.FilePath)}/>
+                    
                 </PhotoContainer>
              ))}
         </PhotoGridViewWrapper>
@@ -26,6 +30,20 @@ const PhotoContainer = styled.div`
         height: 20vw;
     }
     /* margin: 1%; */
+`
+
+const PhotoDescriptionContainer = styled.div`
+    position: absolute;
+    z-index: 2;
+    right:0;
+    bottom:0;
+    padding:0;
+    /* transform: translate(-50%, -50%); */
+`
+
+const PhotoDescription = styled.p`
+    margin:0;
+    background-color: black;
 `
 
 const Photo = styled.img`
