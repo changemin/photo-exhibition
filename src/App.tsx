@@ -3,6 +3,8 @@ import './css/App.css';
 import FlowingText from './components/FlowingText';
 import PhotoGridView from './components/PhotoGridView';
 
+
+
 export default function App() {
   return (
     <div>

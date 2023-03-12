@@ -1,5 +1,6 @@
 import PhotoData from '../data/PhotoData.json'
 import styled from 'styled-components'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 // const images = require.context('../photos', true);
@@ -18,8 +19,12 @@ export default function PhotoGridView() {
 
 const PhotoContainer = styled.div`
     position: relative;
-    width: 25vw;
-    height: 25vw;
+    width: 28vw;
+    height: 28vw;
+    @media screen and (min-width: 768px){
+        width: 20vw;
+        height: 20vw;
+    }
     /* margin: 1%; */
 `
 
@@ -41,19 +46,18 @@ const PhotoGridViewWrapper = styled.div`
     flex-wrap: wrap;
     justify-content:center;
     position: absolute;
-    top: 3vh;
-    left: 5vw;
-    right: 5vw;
-    width: 86vw;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 3vh;
+    top: 10vh;
+    width: 100vw;
+    
+    @media screen and (min-width: 768px){
+        width: 86vw;
+        top: 2vh;
+        padding-left:7vw;
+        padding-right:7vw;
+        padding-bottom: 3vh;
+    }
     /* background-color: red; */
-`
-
-const Placeholder = styled.div`
-    background-color: yellow;
-    align-content: center;
-    color: black;
-    width: 20vh;
-    height: 20vh;
-    margin: 0.5vh;
 `
