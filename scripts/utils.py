@@ -3,6 +3,7 @@ import requests
 import config
 import os, json, shutil
 from datetime import datetime
+from GPSPhoto import gpsphoto
 
 # 사진의 EXIF 데이터를 기반으로 사진 파일 이름을 바꾸어 줍니다.
 def rename_photos_with_exif():
@@ -41,6 +42,12 @@ def generate_json_photo_data():
         photo_data["Idx"] = photo.split("@")[1]
         photo_data["Title"] = photo.split("@")[2][:-4]
         photo_data["Description"] = ""
+        locationData = get_image_location(f"photos/{photo}")
+        Location = {
+            "Latitude":locationData[0],
+            "Longitude":locationData[1]
+        }
+        photo_data["Location"] = Location
         photo_list.append(photo_data)
 
     jsonStr = json.dumps(photo_list, ensure_ascii = False, sort_keys=True, indent=4)
@@ -57,8 +64,7 @@ def update_marquee_text():
         for rightText in textData["right"]:
             if not (("업데이트" in rightText) or ("시선들" in rightText)):
                 rightTexts.append(rightText)
-        photoCnt = len(os.listdir("./src/photos"))
-        rightTexts.append(f"{photoCnt}개의 시선들")
+        rightTexts.append(f"{get_photo_count()}개의 시선들")
         dateStr = datetime.today().strftime('%Y.%m.%d')
         rightTexts.append(f"마지막 업데이트: {dateStr}")
     textData["right"] = rightTexts
@@ -107,6 +113,17 @@ def reset_src_photos():
 def get_photo_count():
     photos = os.listdir("./src/photos")
     return len(photos)
+
+def get_image_location(image_path):
+    """
+    Returns the latitude and longitude of an image file if it has GPS data.
+    """
+    data = gpsphoto.getGPSData(image_path)
+    if data:
+        lat = data['Latitude']
+        long = data['Longitude']
+        return (lat, long)
+    return (0,0)
 
 # graph_url = 'https://graph.facebook.com/v15.0/'
 # def post_image(caption='', image_url='',instagram_account_id='',access_token=''):

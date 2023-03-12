@@ -2,6 +2,12 @@
 
 [photo.kyungmin.life](https://photo.kyungmin.life) 에 게시되어 있습니다.
 
+## Requirements
+
+    pip install GPSPhoto
+    pip install ExifRead
+    pip install piexif==0.7.1
+
 ## TODOS
 
 - [x] 반응형
