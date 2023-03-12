@@ -33,7 +33,7 @@ def rename_photos_with_exif():
 def generate_json_photo_data():
     print("[Python] data/PhotoData.json has created(modified)")
     file_list = os.listdir("photos")
-    file_list.sort()
+    file_list.sort(reverse=True)
     photo_list = []
     for photo in file_list:
         photo_data = {}
