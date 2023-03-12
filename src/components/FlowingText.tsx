@@ -56,6 +56,9 @@ const MobileMarqueeContainer = styled.div`
   left:0;
   bottom: 0;
   width: 100vw;
+  z-index: 2;
+  height: 10vh;
+  background-image: linear-gradient(rgba(19,19,19, 1),70%, rgba(19,19,19, 0) 100%);
 `
 
 const MarqueeText = styled.div`
