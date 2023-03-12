@@ -2,6 +2,7 @@ from PIL import Image, ExifTags
 import requests
 import config
 import os, json, shutil
+from datetime import datetime
 
 # 사진의 EXIF 데이터를 기반으로 사진 파일 이름을 바꾸어 줍니다.
 def rename_photos_with_exif():
@@ -50,7 +51,20 @@ def generate_json_photo_data():
 
 def update_marquee_text():
     print("[Python] Marquee texts updated based on photo data")
-    pass
+    with open("./src/data/FlowingTextData.json", 'r', encoding="utf-8") as jsonFile:
+        textData = json.load(jsonFile)
+        rightTexts = []
+        for rightText in textData["right"]:
+            if not (("업데이트" in rightText) or ("시선들" in rightText)):
+                rightTexts.append(rightText)
+        photoCnt = len(os.listdir("./src/photos"))
+        rightTexts.append(f"{photoCnt}개의 시선들")
+        dateStr = datetime.today().strftime('%Y.%m.%d')
+        rightTexts.append(f"마지막 업데이트: {dateStr}")
+    textData["right"] = rightTexts
+    with open("./src/data/FlowingTextData.json", 'w', encoding="utf-8") as jsonFile:
+        json.dump(textData, jsonFile,ensure_ascii = False, sort_keys=True, indent=4)
+
 
 # photos/ 의 사진들을 src/photos/로 이동합니다.
 def copy_photos():

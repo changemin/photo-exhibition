@@ -22,6 +22,9 @@ export default function FlowingText() {
             {TextData.left.map((item) => (
               <MarqueeText>{item}</MarqueeText>
             ))}
+            {TextData.right.map((item) => (
+              <MarqueeText>{item}</MarqueeText>
+            ))}
           </Marquee>
         </MobileMarqueeContainer>
       </Mobile>
