@@ -17,16 +17,10 @@ export default function FlowingText() {
         </>
       </Desktop>
       <Mobile>
-        <MobileMarqueeContainer>
-          <Marquee gradient={false} speed={7} direction="left">
-            {TextData.left.map((item) => (
-              <MarqueeText>{item}</MarqueeText>
-            ))}
-            {TextData.right.map((item) => (
-              <MarqueeText>{item}</MarqueeText>
-            ))}
-          </Marquee>
-        </MobileMarqueeContainer>
+        <>
+          <TopMarquee />
+          <BottomMarquee />
+        </>
       </Mobile>
     </>
   )
@@ -59,6 +53,28 @@ const MobileMarqueeContainer = styled.div`
   z-index: 2;
   height: 10vh;
   background-image: linear-gradient(rgba(19,19,19, 1),70%, rgba(19,19,19, 0) 100%);
+`
+
+const TopMarqueeContainer = styled.div`
+  position: fixed;
+  top: 2vh;
+  left:0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 2;
+  height: 10vh;
+  background-image: linear-gradient(rgba(19,19,19, 1),70%, rgba(19,19,19, 0) 100%);
+`
+
+const BottomMarqueeContainer = styled.div`
+  position: fixed;
+  bottom: 2vh;
+  left:0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 2;
+  height: 6vh;
+  background-image: linear-gradient(rgba(19,19,19, 0),50%, rgba(19,19,19, 1) 100%);
 `
 
 const MarqueeText = styled.div`
@@ -99,4 +115,25 @@ const RightMarquee = () => (
       ))}
     </Marquee>
   </RightMarqueeContainer>
+)
+
+const TopMarquee = () => (
+  <TopMarqueeContainer>
+    <Marquee gradient={false} speed={10} direction="left">
+      {TextData.left.map((item) => (
+        <MarqueeText>{item}</MarqueeText>
+      ))}
+    </Marquee>
+  </TopMarqueeContainer>
+)
+
+
+const BottomMarquee = () => (
+  <BottomMarqueeContainer>
+    <Marquee gradient={false} speed={10} direction="left">
+      {TextData.right.map((item) => (
+        <MarqueeText>{item}</MarqueeText>
+      ))}
+    </Marquee>
+  </BottomMarqueeContainer>
 )
