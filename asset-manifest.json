@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.70896c90.css",
-    "main.js": "./static/js/main.bf245e7d.js",
+    "main.js": "./static/js/main.be578c15.js",
     "static/js/787.31164517.chunk.js": "./static/js/787.31164517.chunk.js",
     "static/media/NanumSquareNeo-Variable.woff": "./static/media/NanumSquareNeo-Variable.d80ae48b60611b9cbb57.woff",
     "static/media/2023-03-08@16@집앞나무들.JPG": "./static/media/2023-03-08@16@집앞나무들.a254b5493644da3fb39a.JPG",
@@ -37,11 +37,11 @@
     "index.html": "./index.html",
     "static/media/starburst.svg": "./static/media/starburst.7792c6f77e738b28f347e33ddf4e1ddc.svg",
     "main.70896c90.css.map": "./static/css/main.70896c90.css.map",
-    "main.bf245e7d.js.map": "./static/js/main.bf245e7d.js.map",
+    "main.be578c15.js.map": "./static/js/main.be578c15.js.map",
     "787.31164517.chunk.js.map": "./static/js/787.31164517.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.70896c90.css",
-    "static/js/main.bf245e7d.js"
+    "static/js/main.be578c15.js"
   ]
 }
