@@ -20,9 +20,10 @@ export default function PhotoGridView() {
                     <Photo
                         small={require("../photos/"+item.FilePath)}
                         large={require("../photos/"+item.FilePath)}
-                        alt={idx+"번째 시선: "+item.Title}
+                        alt={(PhotoData.length-idx)+"번째 시선: \n"+item.Title}
+                        hideDownload={true}
+                        hideZoom={true}
                     />
-                    
                 </PhotoContainer>
              ))}
         </PhotoGridViewWrapper>
