@@ -44,10 +44,13 @@ const PhotoContainer = styled.div`
 const PhotoDescriptionContainer = styled.div`
     position: absolute;
     z-index: 2;
-    right:0;
-    bottom:0;
-    padding:0;
-    text-align: right;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    
     pointer-events: none;
     /* transform: translate(-50%, -50%); */
 `

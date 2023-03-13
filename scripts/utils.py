@@ -48,6 +48,7 @@ def generate_json_photo_data():
             "Longitude":locationData[1]
         }
         photo_data["Location"] = Location
+        photo_data["InstagramUploaded"] = False
         photo_list.append(photo_data)
 
     jsonStr = json.dumps(photo_list, ensure_ascii = False, sort_keys=True, indent=4)

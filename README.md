@@ -14,7 +14,8 @@
 - [x] dynamic marquee text
 - [x] marquee text 사이 star burst svg 추가하기
 - [ ] Instagram bot python script에 추가
-- [ ] 사진 full image로 보기
+- [x] 사진 full image로 보기
 - [x] 이미지 최적화
-- [ ] Lazy loading 혹은 placeholder image 추가npm 
+- [ ] Lazy loading 혹은 placeholder image 추가
 - [x] EXIF position data 추가
+- [x] Photo description 오른쪽 정렬
