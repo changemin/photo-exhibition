@@ -14,13 +14,16 @@ export default function PhotoGridView() {
                     <PhotoDescriptionContainer>
                         <PhotoDescription>{item.Title}</PhotoDescription>
                         <Desktop>
-                            <PhotoDescription>{item.DateTime}</PhotoDescription>
+                            <>
+                                <PhotoDescription>{item.DateTime}</PhotoDescription>
+                                {/* <PhotoDescription>{item.Location.StringLocation}</PhotoDescription> */}
+                            </>
                         </Desktop>
                     </PhotoDescriptionContainer>
                     <Photo
                         small={require("../photos/"+item.FilePath)}
                         large={require("../photos/"+item.FilePath)}
-                        alt={(PhotoData.length-idx)+"번째 시선: \n"+item.Title}
+                        alt={item.Location.StringLocation+"에서 찾은 "+(PhotoData.length-idx)+"번째 시선 - "+item.Title}
                         hideDownload={true}
                         hideZoom={true}
                     />

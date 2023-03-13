@@ -4,6 +4,9 @@ import requests
 import os, json, shutil
 from datetime import datetime
 from GPSPhoto import gpsphoto
+from geopy.geocoders import Nominatim
+
+
 
 # 사진의 EXIF 데이터를 기반으로 사진 파일 이름을 바꾸어 줍니다.
 def rename_photos_with_exif():
@@ -43,10 +46,19 @@ def generate_json_photo_data():
         photo_data["Title"] = photo.split("@")[2][:-4]
         photo_data["Description"] = ""
         locationData = get_image_location(f"photos/{photo}")
+        
+        geolocator = Nominatim(user_agent="South Korea") # user_agent는 사용자 지정 문자열입니다.
+        latitude = locationData[0]
+        longitude = locationData[1]
+        location = geolocator.reverse(f"{latitude}, {longitude}")
+        address = location.address.split(", ")
+        addressStr = " ".join(reversed(address[-5:-2]))
         Location = {
-            "Latitude":locationData[0],
-            "Longitude":locationData[1]
+            "Latitude":latitude,
+            "Longitude":longitude,
+            "StringLocation": addressStr
         }
+        # print(addressStr)
         photo_data["Location"] = Location
         photo_data["InstagramUploaded"] = False
         photo_list.append(photo_data)

@@ -38,9 +38,13 @@
 
 body {
   margin: 0;
-  background-color: #191919;
   font-family: "NanumSquareNeo-R";
+  background-color: #191919;
   color: #F8F8F8;
+  
+  /* this is for light mode */
+  /* background-color: #F8F8F8;
+  color: #191919; */
   overflow-x: hidden;
   width: 100%
   

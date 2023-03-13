@@ -7,6 +7,7 @@
     pip install GPSPhoto
     pip install ExifRead
     pip install piexif==0.7.1
+    pip install geopy
 
 ## TODOS
 
@@ -19,3 +20,4 @@
 - [ ] Lazy loading 혹은 placeholder image 추가
 - [x] EXIF position data 추가
 - [x] Photo description 오른쪽 정렬
+- [x] 위도 경도 기반 주소
