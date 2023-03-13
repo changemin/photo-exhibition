@@ -2,7 +2,7 @@ import PhotoData from '../data/PhotoData.json'
 import styled from 'styled-components'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Desktop } from './mediaQuery';
-
+import ModalImage from 'react-modal-image';
 
 // const images = require.context('../photos', true);
 
@@ -17,7 +17,11 @@ export default function PhotoGridView() {
                             <PhotoDescription>{item.DateTime}</PhotoDescription>
                         </Desktop>
                     </PhotoDescriptionContainer>
-                    <Photo src={require("../photos/"+item.FilePath)}/>
+                    <Photo
+                        small={require("../photos/"+item.FilePath)}
+                        large={require("../photos/"+item.FilePath)}
+                        alt={idx+"번째 시선: "+item.Title}
+                    />
                     
                 </PhotoContainer>
              ))}
@@ -43,6 +47,7 @@ const PhotoDescriptionContainer = styled.div`
     bottom:0;
     padding:0;
     text-align: right;
+    pointer-events: none;
     /* transform: translate(-50%, -50%); */
 `
 
@@ -60,7 +65,7 @@ const PhotoDescription = styled.p`
 
 `
 
-const Photo = styled.img`
+const Photo = styled(ModalImage)`
     position: absolute;
     top: 0;
     left: 0;
