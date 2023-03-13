@@ -58,7 +58,7 @@ const MobileMarqueeContainer = styled.div`
 
 const TopMarqueeContainer = styled.div`
   position: fixed;
-  top: 2vh;
+  top: 0;
   left:0;
   bottom: 0;
   width: 100vw;

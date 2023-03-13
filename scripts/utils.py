@@ -1,6 +1,6 @@
 from PIL import Image, ExifTags
 import requests
-import config
+# import config
 import os, json, shutil
 from datetime import datetime
 from GPSPhoto import gpsphoto

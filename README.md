@@ -12,7 +12,7 @@
 
 - [x] 반응형
 - [x] dynamic marquee text
-- [ ] marquee text 사이 star burst svg 추가하기
+- [x] marquee text 사이 star burst svg 추가하기
 - [ ] Instagram bot python script에 추가
 - [ ] 사진 full image로 보기
 - [x] 이미지 최적화
